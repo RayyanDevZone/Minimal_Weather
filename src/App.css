@@ -1,38 +1,86 @@
-.App {
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  color: antiquewhite;
+  letter-spacing: 2px;
+}
+
+body {
+  background-image: url("https://wallpaperaccess.com/full/1722876.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#date {
+  text-align: center;
+  font-size: medium;
+  font-weight: bolder;
+  word-spacing: 1px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+#time {
+  font-size: medium;
+}
+
+#inp {
+  padding: 16px;
+  margin-top: 16px;
+  margin-bottom: 26px;
+  border-radius: 32px;
+  box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.5);
+  outline: none;
+  border: none;
+  font-size: 16px;
+  width: 40vw;
+}
+
+.child {
+  border-radius: 25px;
+  width: 60vw;
+  height: 70vh;
+  background-color: rgba(202, 91, 91, 0.637);
+}
+/* Media Queries */
+
+/* For devices with a maximum width of 768px */
+@media only screen and (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  .child {
+    width: 90vw;
+    height: 80vh;
+  }
+
+  #inp {
+    font-size: 14px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* For devices with a maximum width of 480px */
+@media only screen and (max-width: 480px) {
+  body {
+    padding: 10px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .child {
+    width: 95vw;
+    height: 80vh;
+  }
+
+  #inp {
+    font-size: 12px;
   }
 }
