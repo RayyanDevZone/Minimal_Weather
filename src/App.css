@@ -34,6 +34,7 @@ body {
 }
 
 #inp {
+  color: rgba(202, 91, 91, 0.637);
   padding: 16px;
   margin-top: 16px;
   margin-bottom: 26px;
@@ -48,7 +49,7 @@ body {
 .child {
   border-radius: 25px;
   width: 60vw;
-  height: 70vh;
+  height: 50vh;
   background-color: rgba(202, 91, 91, 0.637);
 }
 /* Media Queries */
